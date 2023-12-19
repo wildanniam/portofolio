@@ -10,8 +10,15 @@
 
 footer a {
   text-decoration: none;
+  z-index: 1;
 }
 
 section {
   padding-top: 5rem;
+}
+
+.deketfooter {
+  position: relative;
+  z-index: -1;
+  top: 5px;
 }
