@@ -1,9 +1,17 @@
 .jumbotron {
-  padding-top: 2rem;
+  padding-top: 6rem;
   /* height: 100vh; */
   background-color: #e2edff;
 }
 
 #projects {
   background-color: #e2edff;
+}
+
+footer a {
+  text-decoration: none;
+}
+
+section {
+  padding-top: 5rem;
 }
