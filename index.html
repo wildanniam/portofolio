@@ -51,7 +51,7 @@
     <section class="jumbotron text-center">
         <img src="img/wildanniam.jpg" alt=" Wildan Syukri Niam" width="200" class="rounded-circle img-thumbnail">
         <h1 class="display-4 mt-3">Wildan Syukri Niam</h1>
-        <p class="lead">Student | Software Engineer</p>
+        <p class="lead"></p>
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
             <path fill="#ffffff" fill-opacity="1"
                 d="M0,192L34.3,192C68.6,192,137,192,206,208C274.3,224,343,256,411,240C480,224,549,160,617,160C685.7,160,754,224,823,213.3C891.4,203,960,117,1029,122.7C1097.1,128,1166,224,1234,245.3C1302.9,267,1371,213,1406,186.7L1440,160L1440,320L1405.7,320C1371.4,320,1303,320,1234,320C1165.7,320,1097,320,1029,320C960,320,891,320,823,320C754.3,320,686,320,617,320C548.6,320,480,320,411,320C342.9,320,274,320,206,320C137.1,320,69,320,34,320L0,320Z">
@@ -246,6 +246,18 @@
         });
     </script>
     <!-- Akhir AOS JS -->
+
+    <!-- GSAP -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/TextPlugin.min.js"></script>
+    <script>
+        gsap.registerPlugin(TextPlugin)
+        gsap.to('.lead', { duration: 2, delay: 1.5, text: 'Student | Software Engineer' })
+        gsap.from('.jumbotron img', { duration: 1, rotateY: 360 })
+        gsap.from('.navbar', { duration: 1.5, y: '-100%', opacity: 0, ease: 'bounce' })
+        gsap.from('.display-4', { duration: 1, x: -50, opacity: 0, ease: 'back', delay: 0.5 })
+    </script>
+    <!-- Akhir GSAP -->
 
     <!-- JS Gfrom -->
     <script>
